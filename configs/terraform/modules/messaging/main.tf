@@ -1,0 +1,1 @@
+resource "aws_msk_cluster" "main" { cluster_name = "payments-msk" kafka_version = "3.6.0" number_of_broker_nodes = 2 broker_node_group_info { instance_type = "kafka.m5.large" client_subnets = ["subnet-1","subnet-2"] security_groups = ["sg-1"] } }

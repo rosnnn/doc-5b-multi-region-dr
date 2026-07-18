@@ -1,0 +1,8 @@
+groups:
+  - name: dr-alerts
+    rules:
+      - alert: HighReplicationLag
+        expr: replication_lag_seconds > 60
+        for: 2m
+        labels:
+          severity: p1

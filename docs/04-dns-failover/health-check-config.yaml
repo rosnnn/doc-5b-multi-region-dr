@@ -1,0 +1,1 @@
+checks:\n  - name: api-health\n    endpoint: /health\n    interval: 30\n    failureThreshold: 3
